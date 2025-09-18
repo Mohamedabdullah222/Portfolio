@@ -19,6 +19,7 @@ import shop1 from "./get.PNG"
 import shop2 from "./sign.PNG"
 import shop3 from "./reg.PNG"
 import shop4 from "./card.PNG"
+import cv from "./Mohamed-Abdullah-Elsayed.pdf"
 
 
 export {
@@ -43,4 +44,5 @@ export {
     shop2,
     shop3,
     shop4,
+    cv
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { pro } from "../assets";
+import { cv, pro } from "../assets";
 import { useThemeContext } from "../context/ThemeContext";
 import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 import { motion } from 'framer-motion';
@@ -116,20 +116,17 @@ const About = () => {
 
         {/* Buttons */}
         <div className="flex flex-wrap gap-4 mt-4">
-          <div className="rainbow relative z-0 bg-white/15 overflow-hidden p-0.5 flex items-center justify-center rounded-full hover:scale-105 transition duration-300 active:scale-100">
-          <a             href="/your-cv.pdf"
->
-
-            <button className="px-8 text-sm py-3 text-white rounded-full font-medium bg-gray-900/80 backdrop-blur dark:">
-              Download CV
-            </button>
-          </a>
-          </div>
-
+<div className="rainbow relative z-0 bg-white/15 overflow-hidden p-0.5 flex items-center justify-center rounded-full hover:scale-105 transition duration-300 active:scale-100">
+  <a href={cv} download>
+    <button className="px-8 text-sm py-3 text-white rounded-full font-medium bg-gray-900/80 backdrop-blur">
+      Download CV
+    </button>
+  </a>
+</div>
 
 
           <a
-            href="/your-cv.pdf"
+            href={cv}
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 border border-[#111] text-[#111] hover:bg-[#222] dark:border-[#fff]
